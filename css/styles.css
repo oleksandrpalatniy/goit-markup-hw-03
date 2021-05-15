@@ -65,7 +65,7 @@ body {
 }
 
 .header {
-  border-bottom: 3px color black;
+  border-bottom: 1px solid #ececec;
 }
 
 /* Navigation */
@@ -108,9 +108,6 @@ body {
 .contacts-item + .contacts-item {
   margin-left: 50px;
 }
-/* .contacts-item:not(:last-child) {
-  margin-right: 50px;
-} */
 
 .navigation {
   display: flex;
@@ -168,10 +165,9 @@ body {
 }
 
 /* BUTTON */
-.modal-btn {
+.modal-btn-hero {
   display: inline-block;
-  min-width: 136px;
-  padding: 10px 32px;
+  padding: 6px 22px;
   border: none;
   border-radius: 4px;
 
@@ -185,8 +181,8 @@ body {
   text-align: center;
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn-hero:hover,
+.modal-btn-hero:focus {
   background-color: var(--btn-text-color);
   color: var(--accent-color);
 }
@@ -359,16 +355,56 @@ body {
 /* end footer */
 
 /* portfolio */
-.portfolio-presentation {
+.navigation-portfolio {
+  margin-top: 83px;
+}
+.portfolio-menu {
+  display: flex;
   width: 1200px;
   margin: auto;
+  justify-content: center;
+}
+
+.portfolio-menu-item {
+  margin-left: 8px;
+}
+
+.portfolio-presentation {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 34px;
+  margin-bottom: 105px;
+}
+.modal-btn {
+  margin-left: 8px;
+
+  display: inline-block;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: #f5f4fa;
+  /* color: var(--btn-text-color); */
+  color: var(--main-color);
+  text-align: center;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--btn-text-color);
 }
 
 .porfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  /* margin-left: -30px;
+  margin-top: -30px; */
 }
 .portfolio-item {
   flex-basis: calc((100% - 90px) / 3);
@@ -384,15 +420,16 @@ body {
   color: var(--main-color);
 }
 .portfolio-text {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
-
-.portfolio-menu {
-  display: flex;
-  width: 1200px;
-  margin: auto;
+.portfolio-item-box {
+  padding-top: 20px;
+  padding-left: 20px;
+  border: 1px solid #e5e5e5;
+  border-top: none;
 }
 
 /* end portfolio */
