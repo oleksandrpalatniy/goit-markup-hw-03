@@ -389,7 +389,6 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   background-color: #f5f4fa;
-  /* color: var(--btn-text-color); */
   color: var(--main-color);
   text-align: center;
 }
@@ -403,8 +402,6 @@ body {
 .porfolio-list {
   display: flex;
   flex-wrap: wrap;
-  /* margin-left: -30px;
-  margin-top: -30px; */
 }
 .portfolio-item {
   flex-basis: calc((100% - 90px) / 3);
